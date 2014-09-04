@@ -1,3 +1,3 @@
 ﻿'use strict';
 
-var SecureServiceApp = angular.module('SecureServiceApp', []);
+var app = angular.module('secureServiceApp', []);
