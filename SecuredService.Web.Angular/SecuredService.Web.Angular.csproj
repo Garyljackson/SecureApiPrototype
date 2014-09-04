@@ -63,6 +63,7 @@
     <Content Include="app\app.js" />
     <Content Include="app\controller\homeController.js" />
     <Content Include="app\controller\securePingController.js" />
+    <Content Include="app\services\securePingService.js" />
     <Content Include="app\views\home.html" />
     <Content Include="app\views\securePing.html" />
     <Content Include="index.html" />
@@ -86,9 +87,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="app\services\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -1,7 +1,11 @@
 ﻿'use strict';
 
-app.controller('securePingController', ['$scope', function ($scope) {
+app.controller('securePingController', ['$scope', 'securePingService', function ($scope, securePingService) {
 
-    $scope.date = new Date();
+    securePingService.securePing().then(function(results) {
+        $scope.pingResponse = results.data;
+    }, function (error) {
+        alert(error.data.message);
+    });
 
 }]);
