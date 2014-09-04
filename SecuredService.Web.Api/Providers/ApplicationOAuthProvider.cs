@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin.Security;
-using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
 
 // This file is originally from the SPA template that ships with Visual Studio Express 2013 for Web
@@ -47,12 +46,11 @@ namespace SecuredService.Web.Api.Providers
 
                 ClaimsIdentity oAuthIdentity = await userManager.CreateIdentityAsync(user,
                     context.Options.AuthenticationType);
-                ClaimsIdentity cookiesIdentity = await userManager.CreateIdentityAsync(user,
-                    CookieAuthenticationDefaults.AuthenticationType);
+
                 AuthenticationProperties properties = CreateProperties(user.UserName);
                 var ticket = new AuthenticationTicket(oAuthIdentity, properties);
                 context.Validated(ticket);
-                context.Request.Context.Authentication.SignIn(cookiesIdentity);
+
             }
         }
 

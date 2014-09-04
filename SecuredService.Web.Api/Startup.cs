@@ -15,6 +15,9 @@ namespace SecuredService.Web.Api
             var config = new HttpConfiguration();
             WebApiConfig.Register(config);
             app.UseCors(CorsOptions.AllowAll);
+
+            ConfigureAuth(app);
+
             app.UseWebApi(config);
         }
     }
