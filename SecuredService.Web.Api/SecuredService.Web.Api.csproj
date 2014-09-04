@@ -112,7 +112,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Controllers\VersioningReadme.txt" />
     <Content Include="packages.config" />
+    <Content Include="Secured Service.json.postman_collection" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -126,6 +128,7 @@
   <ItemGroup>
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\v1\SecurePingController.cs" />
     <Compile Include="Migrations\201409040011422_Initial.cs" />
     <Compile Include="Migrations\201409040011422_Initial.Designer.cs">
       <DependentUpon>201409040011422_Initial.cs</DependentUpon>
@@ -141,6 +144,7 @@
       <DependentUpon>201409040011422_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

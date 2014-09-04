@@ -1,7 +1,33 @@
 {
 	"id": "ac14d303-f91d-a9d2-dc07-7f005c59d022",
 	"name": "Secured Service",
+	"description": "",
+	"order": [
+		"64a10209-6078-d609-b34e-ce3bb359dd39",
+		"1954fe7d-1f6c-22e1-a704-6e3ddeaec0aa"
+	],
+	"folders": [],
+	"timestamp": 1409791243346,
+	"synced": false,
 	"requests": [
+		{
+			"id": "1954fe7d-1f6c-22e1-a704-6e3ddeaec0aa",
+			"headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Bearer <Token here>\n",
+			"url": "https://localhost:44307/api/v1/SecurePing",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"time": 1409792233674,
+			"name": "Ping secure service",
+			"description": "This sends a request to the secured ping   service.\n\nYou will first need to call the Authenticate & Get Token service to retrieve a valid token, which then needs to be appended to the Authorization header value after the \"Bearer \"",
+			"collectionId": "ac14d303-f91d-a9d2-dc07-7f005c59d022",
+			"responses": [],
+			"synced": false
+		},
 		{
 			"id": "64a10209-6078-d609-b34e-ce3bb359dd39",
 			"headers": "Accept: application/json\nContent-Type: application/json\n",
@@ -37,10 +63,5 @@
 			"collectionId": "ac14d303-f91d-a9d2-dc07-7f005c59d022",
 			"synced": false
 		}
-	],
-	"order": [
-		"64a10209-6078-d609-b34e-ce3bb359dd39"
-	],
-	"timestamp": 1409791243346,
-	"synced": false
+	]
 }
