@@ -9,6 +9,10 @@ app.config(['$routeProvider',
             templateUrl: '/app/views/home.html',
             controller: 'homeController'
         }).
+        when('/securePing', {
+            templateUrl: '/app/views/securePing.html',
+            controller: 'securePingController'
+        }).
         otherwise({
             redirectTo: '/home'
         });

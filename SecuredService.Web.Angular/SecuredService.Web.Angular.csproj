@@ -62,7 +62,9 @@
   <ItemGroup>
     <Content Include="app\app.js" />
     <Content Include="app\controller\homeController.js" />
+    <Content Include="app\controller\securePingController.js" />
     <Content Include="app\views\home.html" />
+    <Content Include="app\views\securePing.html" />
     <Content Include="index.html" />
     <Content Include="scripts\angular-mocks.js" />
     <Content Include="scripts\angular-route.js" />
