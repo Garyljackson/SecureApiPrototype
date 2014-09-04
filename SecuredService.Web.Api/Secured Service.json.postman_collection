@@ -1,0 +1,46 @@
+{
+	"id": "ac14d303-f91d-a9d2-dc07-7f005c59d022",
+	"name": "Secured Service",
+	"requests": [
+		{
+			"id": "64a10209-6078-d609-b34e-ce3bb359dd39",
+			"headers": "Accept: application/json\nContent-Type: application/json\n",
+			"url": "https://localhost:44307/token",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"data": [
+				{
+					"key": "grant_type",
+					"value": "password",
+					"type": "text"
+				},
+				{
+					"key": "username",
+					"value": "admin",
+					"type": "text"
+				},
+				{
+					"key": "password",
+					"value": "password",
+					"type": "text"
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "Authenticate & Get Token",
+			"description": "This request authenticates the user and receives a token",
+			"descriptionFormat": "html",
+			"time": 1409791243346,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "ac14d303-f91d-a9d2-dc07-7f005c59d022",
+			"synced": false
+		}
+	],
+	"order": [
+		"64a10209-6078-d609-b34e-ce3bb359dd39"
+	],
+	"timestamp": 1409791243346,
+	"synced": false
+}
