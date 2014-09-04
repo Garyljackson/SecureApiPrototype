@@ -1,6 +1,6 @@
 ﻿'use strict';
 
-var app = angular.module('secureServiceApp', ['ngRoute']);
+var app = angular.module('secureServiceApp', ['ngRoute', 'LocalStorageModule']);
 
 app.config(['$routeProvider',
   function ($routeProvider) {
@@ -12,6 +12,14 @@ app.config(['$routeProvider',
         when('/securePing', {
             templateUrl: '/app/views/securePing.html',
             controller: 'securePingController'
+        }).
+        when('/login', {
+            templateUrl: '/app/views/login.html',
+            controller: 'loginController'
+        }).
+        when('/signup', {
+            templateUrl: '/app/views/signup.html',
+            controller: 'signupController'
         }).
         otherwise({
             redirectTo: '/home'

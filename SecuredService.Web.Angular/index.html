@@ -9,19 +9,28 @@
         <ul>
             <li><a href="#/home">Home page</a></li>
             <li><a href="#/securePing">Ping Service</a></li>
+            <li><a href="#/login">Login</a></li>
         </ul>
     </div>
 
     <div ng-view></div>
 
 
-
+    <!--Required Libraries-->
     <script src="scripts/angular.min.js"></script>
     <script src="scripts/angular-route.min.js"></script>
+    <script src="scripts/angular-local-storage.min.js"></script>
+
+    <!--Application-->
     <script src="app/app.js"></script>
-    
+
+    <!--Controllers-->
     <script src="app/controller/homeController.js"></script>
+    <script src="app/controller/loginController.js"></script>
     <script src="app/controller/securePingController.js"></script>
+
+    <!--Services-->
+    <script src="app/services/authService.js"></script>
     <script src="app/services/securePingService.js"></script>
 </body>
 </html>
